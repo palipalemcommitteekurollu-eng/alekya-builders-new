@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alekhya Architecture & Builders | Premier Home Builders in Hyderabad</title>
+    <meta name="description"
+        content="Alekhya Architecture & Builders is Hyderabad's leading construction company specializing in building luxury homes. Premium craftsmanship, fast delivery, and uncompromising quality.">
+    <meta name="keywords"
+        content="construction company Hyderabad, build house on your land, affordable home construction India, end-to-end construction services, villa builders Hyderabad">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- GSAP & Lenis -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-panels">
+            <div class="p-panel"></div>
+            <div class="p-panel"></div>
+            <div class="p-panel"></div>
+        </div>
+        <div class="preloader-content">
+            <div class="preloader-logo-wrapper">
+                <div class="preloader-logo">
+                    <svg viewBox="0 0 100 100">
+                        <path id="logo-p1" d="M20 80 L50 20 L80 80" stroke="#b89146" stroke-width="4" fill="none" />
+                        <path id="logo-p2" d="M40 50 L60 50" stroke="#333333" stroke-width="4" fill="none" />
+                    </svg>
+                </div>
+                <div class="preloader-glow"></div>
+            </div>
+            <div class="preloader-text-inner">
+                <div class="preloader-title" id="preloader-title">
+                    <span>A</span><span>L</span><span>E</span><span>K</span><span>H</span><span>Y</span><span>A</span>
+                </div>
+                <div class="preloader-subtitle">ARCHITECTURE & BUILDERS</div>
+            </div>
+            <div class="preloader-loader-container">
+                <div class="p-loader-track">
+                    <div class="p-loader-bar" id="p-loader-bar"></div>
+                </div>
+                <div class="p-loader-percent" id="p-loader-percent">0%</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 100 100" width="32" height="32" class="logo-mark">
+                        <path d="M20 80 L50 20 L80 80" stroke="currentColor" stroke-width="8" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M40 50 L60 50" stroke="var(--primary)" stroke-width="8" fill="none"
+                            stroke-linecap="round" />
+                        <rect x="48" y="20" width="4" height="60" fill="rgba(212, 175, 55, 0.2)" />
+                    </svg>
+                </div>
+                <div class="logo-text">ALEKHYA <span>ARCHITECTURE & BUILDERS</span></div>
+            </a>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="nav-cta">
+                <div class="mobile-toggle" id="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <a href="#contact" class="btn btn-primary desktop-only" style="padding: 10px 20px;">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero secondary-bg">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <span class="section-subtitle">Since 2010 • Hyderabad, Telangana</span>
+                        <h1>We Don't Just Build Homes. <br> We Craft Legacies.</h1>
+                        <p>Alekhya Architecture & Builders creates luxury residences and commercial landmarks that blend
+                            timeless design with modern engineering. Trusted by 500+ families across Hyderabad for over
+                            15 years of architectural excellence.</p>
+                        <div class="hero-btns" style="display: flex; gap: 20px;">
+                            <a href="#contact" class="btn btn-primary">Start Your Dream Build <i
+                                    class="fas fa-arrow-right"></i></a>
+                            <a href="#projects" class="btn btn-outline">Explore Portfolio</a>
+                        </div>
+                        <div class="trust-badges">
+                            <div class="badge-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>ISO Certified</span>
+                            </div>
+                            <div class="badge-item">
+                                <i class="fas fa-award"></i>
+                                <span>Award Winning</span>
+                            </div>
+                            <div class="badge-item">
+                                <i class="fas fa-hard-hat"></i>
+                                <span>Safety First</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image floating">
+                        <img src="assets/img/houses1.jpg" alt="Modern Luxury Villa" class="hero-img-main img-parallax">
+                        <div class="experience-badge">
+                            <span>15+</span>
+                            <p>Years of Excellence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item" data-aos="fade-up">
+                        <h3 class="counter" data-target="500" data-suffix="+">0+</h3>
+                        <p>Homes Delivered</p>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="counter" data-target="50" data-suffix="+">0+</h3>
+                        <p>Expert Engineers</p>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="counter" data-target="100" data-suffix="%">0%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="counter" data-target="12" data-suffix="">0</h3>
+                        <p>Months Avg. Completion</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision & Mission -->
+        <section class="vision-mission section">
+            <div class="container">
+                <div style="text-align: center; margin-bottom: 60px;">
+                    <span class="section-subtitle" style="justify-content: center;">What Drives Us</span>
+                    <h2 class="section-title">Our Vision & Mission</h2>
+                </div>
+                <div class="vm-grid">
+                    <div class="vm-card" data-aos="fade-right">
+                        <i class="fas fa-eye"></i>
+                        <h3>Our Vision</h3>
+                        <p>To redefine the architectural landscape of Hyderabad by blending traditional craftsmanship
+                            with futuristic sustainability, creating homes that stand as legacies for generations. We
+                            aspire to set new industry benchmarks for quality, innovation, and client satisfaction.</p>
+                    </div>
+                    <div class="vm-card" data-aos="fade-left">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Our Mission</h3>
+                        <p>To provide uncompromising quality and transparency in every build, ensuring that every
+                            Alekhya home is a sanctuary of comfort, luxury, and structural perfection. We are committed
+                            to delivering projects on time, within budget, and beyond expectations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="why-grid">
+                    <div class="why-image" data-aos="fade-right">
+                        <div class="img-reveal-wrapper">
+                            <img src="assets/img/f4437768-1dab-4f72-875b-05d70ce46175.jpg" alt="Architectural Planning"
+                                style="border-radius: 8px;">
+                        </div>
+                    </div>
+                    <div class="why-content" data-aos="fade-left">
+                        <span class="section-subtitle">Since 2010</span>
+                        <h2 class="section-title">A Decade of Excellence</h2>
+                        <p>Founded in 2010 by a team of visionary engineers, Alekhya Architecture & Builders started
+                            with a simple mission: to make high-quality home construction accessible to everyone in
+                            Hyderabad.</p>
+                        <p style="margin-top: 20px;">We specialize in "End-to-End" solutions. We understand that
+                            building a home is a lifetime achievement for most, and we respect that by ensuring
+                            every
+                            brick laid is a testament to our commitment to quality.</p>
+
+                        <div class="values-mini-grid"
+                            style="margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div class="value-mini">
+                                <i class="fas fa-check-circle" style="color: var(--primary);"></i>
+                                <span>Premium Quality</span>
+                            </div>
+                            <div class="value-mini">
+                                <i class="fas fa-check-circle" style="color: var(--primary);"></i>
+                                <span>Transparent Pricing</span>
+                            </div>
+                            <div class="value-mini">
+                                <i class="fas fa-check-circle" style="color: var(--primary);"></i>
+                                <span>Expert Craftsmen</span>
+                            </div>
+                            <div class="value-mini">
+                                <i class="fas fa-check-circle" style="color: var(--primary);"></i>
+                                <span>On-Time Delivery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="section secondary-bg">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 60px;">
+                    <span class="section-subtitle" style="justify-content: center;">Expert Minds</span>
+                    <h2 class="section-title">Meet Our Core Team</h2>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card" data-aos="fade-up">
+                        <div class="team-img"></div>
+                        <h4>K. Rajesh Rao</h4>
+                        <p>Principal Architect</p>
+                    </div>
+                    <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="team-img"></div>
+                        <h4>M. Sneha Reddy</h4>
+                        <p>Head of Design</p>
+                    </div>
+                    <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="team-img"></div>
+                        <h4>S. Vikram Kumar</h4>
+                        <p>Chief Engineer</p>
+                    </div>
+                    <div class="team-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="team-img"></div>
+                        <h4>P. Anita Devi</h4>
+                        <p>Project Manager</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section accent-bg">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 80px;">
+                    <span class="section-subtitle" style="justify-content: center;">What We Do</span>
+                    <h2 class="section-title">Comprehensive Building Solutions</h2>
+                    <p style="max-width: 700px; margin: 0 auto;">From residential villas to commercial spaces, we
+                        handle
+                        every aspect of the build so you don't have to.</p>
+                </div>
+
+                <div class="services-grid-detailed">
+                    <!-- Residential -->
+                    <div class="service-feature-row" data-aos="fade-up">
+                        <div class="service-feature-img">
+                            <img src="assets/img/c4ceef13-4951-4d87-b4dc-8ca70111c0ae.jpg" alt="Residential"
+                                style="border-radius: 8px;">
+                        </div>
+                        <div class="service-feature-content">
+                            <div class="service-icon"><i class="fas fa-home"></i></div>
+                            <h3>Residential Construction</h3>
+                            <p>Building your dream home on your piece of land. We take care of everything—from the
+                                first
+                                sketch to the final coat of paint.</p>
+                            <ul class="feature-list">
+                                <li>Custom Architecture Design</li>
+                                <li>Quality Material Sourcing</li>
+                                <li>Structural Stability Guarantee</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Commercial -->
+                    <div class="service-feature-row reverse" data-aos="fade-up">
+                        <div class="service-feature-content">
+                            <div class="service-icon"><i class="fas fa-building"></i></div>
+                            <h3>Commercial Projects</h3>
+                            <p>Specialized construction for offices, retail stores, and small warehouses. We focus
+                                on
+                                scalability, safety, and business-ready designs.</p>
+                            <ul class="feature-list">
+                                <li>Modern Office Layouts</li>
+                                <li>Fire & Safety Compliance</li>
+                                <li>High-Speed Execution</li>
+                            </ul>
+                        </div>
+                        <div class="service-feature-img">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000"
+                                alt="Commercial" style="border-radius: 8px;">
+                        </div>
+                    </div>
+
+                    <!-- Renovations -->
+                    <div class="service-feature-row" data-aos="fade-up">
+                        <div class="service-feature-img">
+                            <img src="assets/img/ddebf19a-11eb-40e1-a764-1d9721f09ecb.jpg" alt="Renovations"
+                                style="border-radius: 8px;">
+                        </div>
+                        <div class="service-feature-content">
+                            <div class="service-icon"><i class="fas fa-tools"></i></div>
+                            <h3>Renovations & Interiors</h3>
+                            <p>Upgrade your living space with our premium interior design and structural renovation
+                                services. We modernize old buildings with the latest trends.</p>
+                            <ul class="feature-list">
+                                <li>Modular Kitchen & Wardrobes</li>
+                                <li>Structural Reinforcements</li>
+                                <li>Lighting & Electrical Overhaul</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Process -->
+                <div class="process-section" style="margin-top: 120px;">
+                    <div style="text-align: center; margin-bottom: 60px;">
+                        <span class="section-subtitle" style="justify-content: center;">How We Work</span>
+                        <h2 class="section-title">Our Transparent Process</h2>
+                        <p style="max-width: 600px; margin: 15px auto 0;">Every great home starts with a clear roadmap.
+                            Here's how we ensure your project is delivered with precision and accountability.</p>
+                    </div>
+                    <div class="process-grid">
+                        <div class="process-step" data-aos="fade-up">
+                            <div class="step-num">01</div>
+                            <h3>Free Consultation</h3>
+                            <p>We visit your site, understand your requirements, discuss your budget, and provide a
+                                detailed cost estimation — completely free of charge.</p>
+                        </div>
+                        <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                            <div class="step-num">02</div>
+                            <h3>Design & Planning</h3>
+                            <p>Our architects create custom 2D/3D floor plans, elevation designs, and structural
+                                blueprints. You approve every detail before construction begins.</p>
+                        </div>
+                        <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                            <div class="step-num">03</div>
+                            <h3>Construction</h3>
+                            <p>Our expert engineers and skilled labour execute the build with premium materials. You
+                                receive weekly progress reports with photo updates.</p>
+                        </div>
+                        <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                            <div class="step-num">04</div>
+                            <h3>Handover & Support</h3>
+                            <p>Final quality inspection, interior finishing, and key handover. We provide a 10-year
+                                structural warranty and 1-year maintenance support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 60px;">
+                    <div>
+                        <span class="section-subtitle">Our Gallery</span>
+                        <h2 class="section-title" style="margin-bottom: 0;">Featured Masterpieces</h2>
+                    </div>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card" data-aos="fade-up">
+                        <img src="assets/img/houses1.jpg" alt="Jubilee Hills Residency" class="project-img">
+                        <div class="project-overlay">
+                            <h3>Jubilee Hills Residency</h3>
+                            <p>Luxury villa with eco-friendly features.</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="assets/img/houses2.jpg" alt="Modern Duplex" class="project-img">
+                        <div class="project-overlay">
+                            <h3>Modern Duplex, Gachibowli</h3>
+                            <p>A sleek, minimal design for a compact plot.</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="assets/img/d4f19b71-af4e-4885-b36f-9496e4314c37.jpg" alt="Hi-Tech Tower"
+                            class="project-img">
+                        <div class="project-overlay">
+                            <h3>Hi-Tech Tower</h3>
+                            <p>Commercial complex with glass facade.</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="fade-up">
+                        <img src="assets/img/a1d01ae8-545c-4976-b1a3-1bd0f9e1baba.jpg" alt="Kokapet Heritage Villa"
+                            class="project-img">
+                        <div class="project-overlay">
+                            <h3>Kokapet Heritage Villa</h3>
+                            <p>Classical design with modern interior.</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="https://images.unsplash.com/photo-1600585154526-990dbea46e06?auto=format&fit=crop&q=80&w=800"
+                            alt="Secunderabad Office" class="project-img">
+                        <div class="project-overlay">
+                            <h3>Secunderabad Office Reno</h3>
+                            <p>Before & After: Complete transformation.</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=800"
+                            alt="Manikonda Smart Home" class="project-img">
+                        <div class="project-overlay">
+                            <h3>Manikonda Smart Home</h3>
+                            <p>Fully automated residential build.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all-images-marquee" style="margin-top: 100px;">
+                    <div style="text-align: center; margin-bottom: 40px;">
+                        <span class="section-subtitle" style="justify-content: center;">Portfolio Showcase</span>
+                        <h2 class="section-title">Every Detail Matters</h2>
+                    </div>
+                    <!-- Horizontal Marquee of project images -->
+                    <div class="marquee-outer">
+                        <div class="marquee-inner">
+                            <img src="assets/img/houses1.jpg" alt="Project 1">
+                            <img src="assets/img/houses2.jpg" alt="Project 2">
+                            <img src="assets/img/c4ceef13-4951-4d87-b4dc-8ca70111c0ae.jpg" alt="Project 3">
+                            <img src="assets/img/ddebf19a-11eb-40e1-a764-1d9721f09ecb.jpg" alt="Project 4">
+                            <img src="assets/img/f4437768-1dab-4f72-875b-05d70ce46175.jpg" alt="Project 5">
+                            <img src="assets/img/d4f19b71-af4e-4885-b36f-9496e4314c37.jpg" alt="Project 6">
+                            <img src="assets/img/a1d01ae8-545c-4976-b1a3-1bd0f9e1baba.jpg" alt="Project 7">
+                            <img src="assets/img/cdecd44b-0ede-43db-966e-f19da8c6a9db.jpg" alt="Project 8">
+                            <!-- Duplicate for seamless loop -->
+                            <img src="assets/img/houses1.jpg" alt="Project 1">
+                            <img src="assets/img/houses2.jpg" alt="Project 2">
+                            <img src="assets/img/c4ceef13-4951-4d87-b4dc-8ca70111c0ae.jpg" alt="Project 3">
+                            <img src="assets/img/ddebf19a-11eb-40e1-a764-1d9721f09ecb.jpg" alt="Project 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section secondary-bg">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 60px;">
+                    <span class="section-subtitle" style="justify-content: center;">Get In Touch</span>
+                    <h2 class="section-title">Let's Build Your Dream</h2>
+                </div>
+
+                <div class="contact-grid-main">
+                    <div class="contact-info-premium" data-aos="fade-right">
+                        <div class="premium-info-card">
+                            <div class="info-content">
+                                <div class="info-item-p">
+                                    <div class="info-i"><i class="fas fa-map-marker-alt"></i></div>
+                                    <div class="info-t">
+                                        <h4>Head Office</h4>
+                                        <p># 11-4-650, Sovereign Shelters, AC Guards, Hyderabad</p>
+                                    </div>
+                                </div>
+                                <div class="info-item-p">
+                                    <div class="info-i"><i class="fas fa-phone-alt"></i></div>
+                                    <div class="info-t">
+                                        <h4>Call Us</h4>
+                                        <p>+91 99635 85964<br>+91 98855 00069</p>
+                                    </div>
+                                </div>
+                                <div class="info-item-p">
+                                    <div class="info-i"><i class="fas fa-envelope"></i></div>
+                                    <div class="info-t">
+                                        <h4>Email Support</h4>
+                                        <p>info@alekhya-architecture.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-socials">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-premium" data-aos="fade-left">
+                        <form class="premium-form">
+                            <div class="form-row">
+                                <div class="p-input-group">
+                                    <label>First Name</label>
+                                    <input type="text" placeholder="John" required>
+                                </div>
+                                <div class="p-input-group">
+                                    <label>Phone Number</label>
+                                    <input type="tel" placeholder="+91 00000 00000" required>
+                                </div>
+                            </div>
+                            <div class="p-input-group">
+                                <label>Email Address</label>
+                                <input type="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="p-input-group">
+                                <label>Project Type</label>
+                                <select>
+                                    <option>Residential Construction</option>
+                                    <option>Commercial Construction</option>
+                                    <option>Renovation & Interior</option>
+                                </select>
+                            </div>
+                            <div class="p-input-group">
+                                <label>Your Message</label>
+                                <textarea rows="4" placeholder="Tell us about your project..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        </form>
+                    </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section accent-bg">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 60px;">
+                    <span class="section-subtitle" style="justify-content: center;">Common Queries</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p style="max-width: 600px; margin: 15px auto 0;">Have questions about building your dream home?
+                        We've answered the most common ones below.</p>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item" data-aos="fade-up">
+                        <div class="faq-question">
+                            <span>How long does it take to build a 3BHK villa?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            On average, a premium 3BHK villa takes between 10 to 14 months depending on the design
+                            complexity, weather conditions, and site accessibility. We provide a detailed timeline
+                            during the planning phase and send weekly progress updates.
+                        </div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="50">
+                        <div class="faq-question">
+                            <span>Do you assist with government approvals and permits?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Yes, we provide end-to-end assistance for HMDA/GHMC approvals, building permits, and all
+                            necessary documentation. Our legal team handles the paperwork so you can focus on your
+                            vision.
+                        </div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="faq-question">
+                            <span>What kind of warranty do you provide?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            We offer a comprehensive 10-year structural warranty and a 1-year maintenance warranty for
+                            all our residential projects. This covers foundation, walls, roofing, plumbing, and
+                            electrical systems.
+                        </div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+                        <div class="faq-question">
+                            <span>What is the cost per square foot for construction?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Our construction packages start from ₹1,800 per sq.ft for standard builds and go up to
+                            ₹3,500 per sq.ft for premium luxury finishes. The exact cost depends on the design,
+                            materials chosen, and site conditions. We provide a free, no-obligation estimate after the
+                            initial site visit.
+                        </div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="faq-question">
+                            <span>Can I make changes during construction?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            Yes, minor design modifications can be accommodated during the early stages of construction.
+                            Major structural changes may involve additional costs and timeline adjustments. We always
+                            keep you informed before any changes are made.
+                        </div>
+                    </div>
+                    <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                        <div class="faq-question">
+                            <span>Do you build on my own land or provide plots?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            We specialize in "Build on Your Land" services. If you already own a plot in Hyderabad or
+                            surrounding areas, we handle everything from design to handover. We can also assist in
+                            finding suitable plots through our partner network.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#home" class="logo" style="margin-bottom: 32px;">
+                        <div class="logo-icon" style="background: var(--accent); padding: 8px; border-radius: 4px;">
+                            <svg viewBox="0 0 100 100" width="24" height="24" class="logo-mark">
+                                <path d="M20 80 L50 20 L80 80" stroke="#b89146" stroke-width="8" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M40 50 L60 50" stroke="#333333" stroke-width="8" fill="none"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="logo-text" style="color: var(--primary);">ALEKHYA <span>ARCHITECTURE &
+                                BUILDERS</span>
+                        </div>
+                    </a>
+                    <p>Premier architectural and construction services in Hyderabad. We design and build high-end
+                        residential and commercial landmarks.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Portfolio</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-links">
+                        <li>Lakdikapul, Hyderabad</li>
+                        <li>+91 99635 85964</li>
+                        <li>info@alekhya-architecture.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Alekhya Architecture & Builders. All Rights Reserved. | Designed and Maintained by <a
+                        href="https://visvag.com" target="_blank" class="dev-link">VISVAG.COM</a></p>
+                <div class="footer-tagline">Excellence in Every Detail</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
